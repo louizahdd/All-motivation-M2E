@@ -2,7 +2,7 @@ from docx import Document
 from docx.shared import Pt, Cm
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 
-def create_letter(filename, recipient_lines, intro_para, closing_para):
+def create_letter(filename, recipient_lines, intro_para, closing_para, work_para=None):
     doc = Document()
 
     for section in doc.sections:
@@ -50,11 +50,18 @@ def create_letter(filename, recipient_lines, intro_para, closing_para):
     add_paragraph("Objet : Candidature au Master M2E", bold=True, space_before=6, space_after=12)
     add_paragraph("Madame, Monsieur,", space_after=6)
 
+    default_work_para = (
+        "Par ailleurs, mon poste actuel de chargée de recouvrement, bien qu'éloigné du milieu scolaire, "
+        "m'a apporté une rigueur organisationnelle et une aisance dans la communication professionnelle "
+        "qui seront des atouts pour enseigner. Gérer un portefeuille de comptes, prioriser les actions, "
+        "travailler en équipe : autant de compétences transversales que je souhaite mettre au service de "
+        "l'éducation."
+    )
     paragraphs = [
         intro_para,
         "Mon parcours en licence Sciences de l'éducation à l'Université de Rennes 2 a joué un rôle déterminant dans la construction de ce projet. J'y ai acquis des bases solides en pédagogie, en psychologie du développement et en didactique. Ces trois années m'ont confirmé que c'est dans l'enseignement du premier degré que je veux m'engager durablement, et votre formation représente pour moi l'étape la plus cohérente pour y parvenir.",
         "Ce projet ne s'est pas construit uniquement dans les livres. C'est sur le terrain que ma vocation s'est précisée, étape après étape. D'abord en animation périscolaire, où j'ai découvert qu'un cadre bienveillant compte autant que ce que l'on transmet. Puis en classe de mer, où j'ai compris que c'est la qualité du lien avec les élèves qui rend tout apprentissage possible. Enfin en tutorat auprès d'apprenants étrangers, où j'ai appris à reformuler, différencier et écouter vraiment. Chaque expérience a renforcé la même certitude : c'est dans ce métier que je veux grandir.",
-        "Par ailleurs, mon poste actuel de chargée de recouvrement, bien qu'éloigné du milieu scolaire, m'a apporté une rigueur organisationnelle et une aisance dans la communication professionnelle qui seront des atouts pour enseigner. Gérer un portefeuille de comptes, prioriser les actions, travailler en équipe : autant de compétences transversales que je souhaite mettre au service de l'éducation.",
+        work_para if work_para else default_work_para,
         closing_para,
     ]
 
@@ -144,7 +151,56 @@ CLOSING_ISFEC = (
     "Je suis déterminée à m'investir pleinement dans cette formation."
 )
 
+INTRO_INSPE_AMIENS = (
+    "C'est une vocation pour l'enseignement, mûrie au fil des années, qui me pousse aujourd'hui à "
+    "présenter ma candidature au Master M2E parcours distanciel que vous proposez — et c'est mon "
+    "premier choix. Ce n'est pas un choix par défaut : votre formation est celle que j'ai identifiée "
+    "en priorité, et ce pour plusieurs raisons. La qualité du diplôme national délivré par l'Université "
+    "de Picardie Jules Verne, la rigueur de la préparation au CRPE, et la taille de la promotion — "
+    "trente étudiants — garantissent un suivi individualisé et un accompagnement humain que je ne "
+    "retrouverais nulle part ailleurs dans ce format. C'est dans ce cadre exigeant que je souhaite "
+    "construire mon avenir dans l'enseignement du premier degré."
+)
+
+WORK_PARA_INSPE_AMIENS = (
+    "Ma situation personnelle et professionnelle rend le format distanciel non seulement souhaitable, "
+    "mais indispensable. Mon poste actuel de chargée de recouvrement m'a forgé une rigueur "
+    "organisationnelle, une capacité à gérer les priorités et une aisance dans la communication "
+    "professionnelle que je mettrai au service de l'enseignement — et que je ne peux me permettre "
+    "d'abandonner du jour au lendemain. Par ailleurs, ma mère est en maladie professionnelle depuis "
+    "plusieurs années, avec des séquelles durables qui nécessitent une présence régulière et un "
+    "accompagnement au quotidien. Fille unique, je suis la seule à pouvoir assumer ce rôle à ses "
+    "côtés. Quitter Lorient pour rejoindre un campus à temps plein n'est pas une option que je "
+    "peux envisager en responsabilité. Votre parcours distanciel est la seule voie qui me permet "
+    "de poursuivre ma vocation sans renoncer aux obligations familiales que je ne peux déléguer "
+    "à personne."
+)
+
+CLOSING_INSPE_AMIENS = (
+    "Je suis profondément attachée à l'idée que l'enseignement ne se réduit pas à la transmission de "
+    "savoirs : il s'agit d'accompagner chaque élève dans son développement, avec attention et exigence. "
+    "Cette conviction, je la porte depuis des années, et c'est elle qui me donne la force de construire "
+    "ce projet dans des conditions exigeantes. Je suis convaincue que votre formation à distance, loin "
+    "d'être un format de facilité, est celui qui demande le plus d'autonomie, d'organisation et de "
+    "rigueur — qualités que j'ai développées et que je mettrai entièrement au service de cette "
+    "formation. Je suis déterminée à réussir le CRPE et à devenir professeure des écoles."
+)
+
 # ── Génération des lettres ────────────────────────────────────────────────────
+
+create_letter(
+    "lettre_INSPE_Amiens.docx",
+    [
+        "INSPE de l'Académie d'Amiens",
+        "Université de Picardie Jules Verne",
+        "Institut national supérieur du professorat",
+        "et de l'éducation – Hauts-de-France",
+        "Amiens (80)",
+    ],
+    INTRO_INSPE_AMIENS,
+    CLOSING_INSPE_AMIENS,
+    work_para=WORK_PARA_INSPE_AMIENS,
+)
 
 create_letter(
     "lettre_INSPE_AixMarseille_Marseille.docx",
