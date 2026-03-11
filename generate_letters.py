@@ -163,17 +163,19 @@ INTRO_INSPE_AMIENS = (
 )
 
 WORK_PARA_INSPE_AMIENS = (
-    "Ma situation personnelle et professionnelle rend le format distanciel non seulement souhaitable, "
-    "mais indispensable. Mon poste actuel de chargée de recouvrement m'a forgé une rigueur "
-    "organisationnelle, une capacité à gérer les priorités et une aisance dans la communication "
-    "professionnelle que je mettrai au service de l'enseignement — et que je ne peux me permettre "
-    "d'abandonner du jour au lendemain. Par ailleurs, ma mère est en maladie professionnelle depuis "
-    "plusieurs années, avec des séquelles durables qui nécessitent une présence régulière et un "
-    "accompagnement au quotidien. Fille unique, je suis la seule à pouvoir assumer ce rôle à ses "
-    "côtés. Quitter Lorient pour rejoindre un campus à temps plein n'est pas une option que je "
-    "peux envisager en responsabilité. Votre parcours distanciel est la seule voie qui me permet "
-    "de poursuivre ma vocation sans renoncer aux obligations familiales que je ne peux déléguer "
-    "à personne."
+    "Ma situation personnelle et professionnelle fait du format distanciel la seule voie réellement "
+    "accessible pour moi. Ma mère est en arrêt pour maladie professionnelle depuis plusieurs années. "
+    "Son état de santé s'est progressivement dégradé au point de nécessiter une présence quotidienne : "
+    "accompagnement aux rendez-vous médicaux, gestion des démarches administratives liées à sa prise "
+    "en charge, soutien moral et assistance dans les actes de la vie courante lors de ses périodes de "
+    "crise. Fille unique, il n'existe personne d'autre dans la famille pour assumer ce rôle. L'abandonner "
+    "n'est pas une option envisageable, ni moralement ni matériellement. À cela s'ajoute une contrainte "
+    "économique tout aussi réelle : mon salaire de chargée de recouvrement constitue la seule source de "
+    "revenus stables du foyer. Quitter mon poste ou m'éloigner géographiquement fragiliserait "
+    "immédiatement notre situation financière, déjà mise à l'épreuve par les frais liés à la maladie "
+    "de ma mère. Ce n'est donc pas un choix de confort qui m'oriente vers votre parcours distanciel : "
+    "c'est une contrainte structurelle, profonde et durable, qui fait de votre formation la seule "
+    "compatible avec ma réalité."
 )
 
 CLOSING_INSPE_AMIENS = (
