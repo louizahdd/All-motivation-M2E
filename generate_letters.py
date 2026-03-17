@@ -163,11 +163,13 @@ INTRO_INSPE_AMIENS = (
 )
 
 WORK_PARA_INSPE_AMIENS = (
-    "Ma situation personnelle rend le présentiel impossible. Ma mère est en arrêt pour maladie "
-    "professionnelle depuis plusieurs années et nécessite une présence quotidienne à ses côtés. "
-    "Fille unique, je suis la seule à pouvoir assumer ce rôle. Quitter Lorient pour rejoindre un "
-    "campus à temps plein n'est tout simplement pas envisageable. Le format distanciel est donc la "
-    "seule option compatible avec ma réalité."
+    "Mon choix du format distanciel répond à une contrainte familiale concrète et durable. Ma mère "
+    "est en arrêt pour maladie professionnelle depuis plusieurs années ; son état nécessite une "
+    "présence régulière à ses côtés. Étant fille unique, je suis la seule personne en mesure "
+    "d'assurer cet accompagnement. Un déménagement ou des déplacements réguliers vers un campus "
+    "distant sont donc incompatibles avec cette réalité. Votre parcours en distanciel est la seule "
+    "formation qui me permette de préparer sérieusement le CRPE sans renoncer à mes responsabilités "
+    "familiales."
 )
 
 CLOSING_INSPE_AMIENS = (
