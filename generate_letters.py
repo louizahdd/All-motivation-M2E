@@ -163,12 +163,11 @@ INTRO_INSPE_AMIENS = (
 )
 
 WORK_PARA_INSPE_AMIENS = (
-    "Ma situation personnelle et professionnelle rend le présentiel impossible. Ma mère est en arrêt "
-    "pour maladie professionnelle depuis plusieurs années et nécessite une présence quotidienne à ses "
-    "côtés. Fille unique, je suis la seule à pouvoir assumer ce rôle. Par ailleurs, mon salaire de "
-    "chargée de recouvrement constitue la principale source de revenus du foyer, ce qui exclut toute "
-    "possibilité de quitter mon poste. Le format distanciel est donc la seule option compatible avec "
-    "ma réalité."
+    "Ma situation personnelle rend le présentiel impossible. Ma mère est en arrêt pour maladie "
+    "professionnelle depuis plusieurs années et nécessite une présence quotidienne à ses côtés. "
+    "Fille unique, je suis la seule à pouvoir assumer ce rôle. Quitter Lorient pour rejoindre un "
+    "campus à temps plein n'est tout simplement pas envisageable. Le format distanciel est donc la "
+    "seule option compatible avec ma réalité."
 )
 
 CLOSING_INSPE_AMIENS = (
