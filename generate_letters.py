@@ -6,6 +6,8 @@ def create_letter(filename, recipient_lines, intro_para, closing_para, work_para
     doc = Document()
 
     for section in doc.sections:
+        section.page_width = Cm(21)
+        section.page_height = Cm(29.7)
         section.top_margin = Cm(2.5)
         section.bottom_margin = Cm(2.5)
         section.left_margin = Cm(2.5)
