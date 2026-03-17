@@ -163,19 +163,12 @@ INTRO_INSPE_AMIENS = (
 )
 
 WORK_PARA_INSPE_AMIENS = (
-    "Ma situation personnelle et professionnelle fait du format distanciel la seule voie réellement "
-    "accessible pour moi. Ma mère est en arrêt pour maladie professionnelle depuis plusieurs années. "
-    "Son état de santé s'est progressivement dégradé au point de nécessiter une présence quotidienne : "
-    "accompagnement aux rendez-vous médicaux, gestion des démarches administratives liées à sa prise "
-    "en charge, soutien moral et assistance dans les actes de la vie courante lors de ses périodes de "
-    "crise. Fille unique, il n'existe personne d'autre dans la famille pour assumer ce rôle. L'abandonner "
-    "n'est pas une option envisageable, ni moralement ni matériellement. À cela s'ajoute une contrainte "
-    "économique tout aussi réelle : mon salaire de chargée de recouvrement constitue la seule source de "
-    "revenus stables du foyer. Quitter mon poste ou m'éloigner géographiquement fragiliserait "
-    "immédiatement notre situation financière, déjà mise à l'épreuve par les frais liés à la maladie "
-    "de ma mère. Ce n'est donc pas un choix de confort qui m'oriente vers votre parcours distanciel : "
-    "c'est une contrainte structurelle, profonde et durable, qui fait de votre formation la seule "
-    "compatible avec ma réalité."
+    "Ma situation personnelle et professionnelle rend le présentiel impossible. Ma mère est en arrêt "
+    "pour maladie professionnelle depuis plusieurs années et nécessite une présence quotidienne à ses "
+    "côtés. Fille unique, je suis la seule à pouvoir assumer ce rôle. Par ailleurs, mon salaire de "
+    "chargée de recouvrement constitue la principale source de revenus du foyer, ce qui exclut toute "
+    "possibilité de quitter mon poste. Le format distanciel est donc la seule option compatible avec "
+    "ma réalité."
 )
 
 CLOSING_INSPE_AMIENS = (
